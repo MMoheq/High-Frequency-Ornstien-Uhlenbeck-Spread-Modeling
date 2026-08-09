@@ -1,4 +1,4 @@
-data_*.py implement three different methods of collecting price data using CCXT.
+data_*.py implement three different methods of collecting price data using CCXT trade history. This approach aims to get sub-second frequency data.
 
 clean_1.py implements cleaning and preparation methods. Preparation of data involves combining separate time series data of a trading pair on two different exchanges into a single DataFrame modelling spread. To deal with missing values for a particular timestamp, we have three approaches. We can continue with the irregular data, or we can make it regular through linear interpolation, or linear interpolate with added noise.
 
