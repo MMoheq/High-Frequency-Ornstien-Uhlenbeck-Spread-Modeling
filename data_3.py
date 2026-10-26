@@ -64,7 +64,7 @@ def gather_trades(exch, symbol, show_loop = False):
         
         if show_loop:
             print(exch.id, ' ', symbol, ' loop number:', i , 'time: ', time_tracker)
-            trades_1 = pd.DataFrame(exch.fetch_trades(symbol, since = time_tracker, limit = 1000))
+        trades_1 = pd.DataFrame(exch.fetch_trades(symbol, since = time_tracker, limit = 1000))
         
         if not trades_1.empty:
             trades_1 = trades_1[['id', 'datetime','side','type','cost', 'price', 'amount']]
